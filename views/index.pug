@@ -5,6 +5,8 @@ block content
   p Welcome to my #{title}
 
   each message in messages
+    h3 #{message.user} 
     p #{message.text} 
-    p #{message.user} 
     p #{message.added}
+  
+  a(href="/new") Send a message
